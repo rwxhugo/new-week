@@ -1,30 +1,36 @@
 #!/bin/zsh
 # Making a script that creates new folder for a new week.
 
+# MODIFY THE FOLLOWING FOR EASIER USAGE !
+DSApath=~/Documents/Computer\ Science/DSA
+OOPpath=~/Documents/Computer\ Science/OOP
+MATHpath=~/Documents/Computer\ Science/M\&L/Maths
+LOGICpath=~/Documents/Computer\ Science/M\&L/Logic
+
 # Get user input
 echo "What week are you starting ?"
 read WEEKNUMBER
 
 # If condition to check if file of Week N already exist in DSA folder
 # Don't need to check for all folders since if one created, the others also !
-if [ -d "/Users/biaishugo/Documents/Computer Science/DSA/Week $WEEKNUMBER" ];
+if [ -d "/Users/biaishugo/Documents/Computer Science/DSA/Week $WEEKNUMBER" ]; #<-- you must you complete folder path because inside string!
 then
     # Output if folder already exists
     echo "ERROR --> directory Week $WEEKNUMBER already exists !"
 else
-    cd ~/Documents/Computer\ Science/DSA
+    cd $DSApath
     mkdir "Week $WEEKNUMBER"
     echo "Week $WEEKNUMBER created in /DSA"
 
-    cd ~/Documents/Computer\ Science/OOP
+    cd $OOPpath
     mkdir "Week ""$WEEKNUMBER"
     echo "Week $WEEKNUMBER created in /OOP"
 
-    cd ~/Documents/Computer\ Science/M\&L/Maths
+    cd $MATHpath
     mkdir "Week ""$WEEKNUMBER"
     echo "Week $WEEKNUMBER created in /M&L/Maths"
 
-    cd ~/Documents/Computer\ Science/M\&L/Logic
+    cd $LOGICpath
     mkdir "Week ""$WEEKNUMBER"
     echo "Week $WEEKNUMBER created in /M&L/Logic"
 
