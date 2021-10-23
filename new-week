@@ -12,19 +12,19 @@ then
     # Output if folder already exists
     echo "ERROR --> directory Week $WEEKNUMBER already exists !"
 else
-    cd /Users/biaishugo/Documents/Computer\ Science/DSA
+    cd ~/Documents/Computer\ Science/DSA
     mkdir "Week $WEEKNUMBER"
     echo "Week $WEEKNUMBER created in /DSA"
 
-    cd /Users/biaishugo/Documents/Computer\ Science/OOP
+    cd ~/Documents/Computer\ Science/OOP
     mkdir "Week ""$WEEKNUMBER"
     echo "Week $WEEKNUMBER created in /OOP"
 
-    cd /Users/biaishugo/Documents/Computer\ Science/M\&L/Maths
+    cd ~/Documents/Computer\ Science/M\&L/Maths
     mkdir "Week ""$WEEKNUMBER"
     echo "Week $WEEKNUMBER created in /M&L/Maths"
 
-    cd /Users/biaishugo/Documents/Computer\ Science/M\&L/Logic
+    cd ~/Documents/Computer\ Science/M\&L/Logic
     mkdir "Week ""$WEEKNUMBER"
     echo "Week $WEEKNUMBER created in /M&L/Logic"
 
