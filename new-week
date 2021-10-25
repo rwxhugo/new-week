@@ -7,13 +7,16 @@ OOPpath=~/Documents/Computer\ Science/OOP
 MATHpath=~/Documents/Computer\ Science/M\&L/Maths
 LOGICpath=~/Documents/Computer\ Science/M\&L/Logic
 
+#for PATHcheck, must be complete path from root, can't use ~ abreviation
+PATHcheck="/Users/biaishugo/Documents/Computer Science/DSA/Week"
+
 # Get user input
 echo "What week are you starting ?"
 read WEEKNUMBER
 
 # If condition to check if file of Week N already exist in DSA folder
 # Don't need to check for all folders since if one created, the others also !
-if [ -d "/Users/biaishugo/Documents/Computer Science/DSA/Week $WEEKNUMBER" ]; #<-- you must you complete folder path because inside string!
+if [ -d "$PATHcheck $WEEKNUMBER" ];
 then
     # Output if folder already exists
     echo "ERROR --> directory Week $WEEKNUMBER already exists !"
